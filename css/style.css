@@ -1,0 +1,84 @@
+/*------------GLOBALES---------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --colorUno: #21295c;
+  --colorDos: #cf5c36;
+  --colorThree: #eee5e9;
+
+  --fuente: Arial, Helvetica, sans-serif;
+
+  --sm: 1.2rem;
+  --md: 1.6rem;
+  --lg: 2.5rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.home__body {
+  font-family: var(--fuente);
+  font-size: var(--lg);
+  background-color: var(--colorUno);
+  color: var(--colorThree);
+}
+
+/*----------BODY---------*/
+
+.main__conteiner {
+  display: grid;
+  place-content: center;
+  margin: 20px auto;
+}
+
+.form__conteiner {
+  width: 300px;
+
+  margin: 20px;
+  padding: 20px;
+  background-color: var(--colorThree);
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.8rem;
+}
+
+form p {
+  text-align: center;
+  font-size: var(--md);
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--colorDos);
+}
+
+input[type="text"] {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: var(--lg);
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.btn {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  font-size: var(--sm);
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--colorDos);
+
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: var(--colorDos);
+  color: var(--colorThree);
+}
